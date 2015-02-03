@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<!-- Unamed Text Adventure-->
+<!-- Created By Eric Mikulin-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Text^2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="src/controller.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>The Text Adventure</h1>
+    </header>
+
+    <div class="screen">
+      <div class="textView">
+        <pre id="textTarget"></pre>
+      </div>
+      
+      <div class="textEnter">
+        <form>
+          <input type="text" id="input"/>
+          <input type="submit" style="position: absolute; left: -9999px"/>
+        </form>
+      </div>
+    </div>
+
+    <div class="quickControl">
+      <p>Quick Controls</p> 
+      <button type="button" id="north">North</button>
+      <button type="button" id="south">South</button>
+      <button type="button" id="west">West</button>
+      <button type="button" id="east">East</button>
+    </div>
+
+    <footer>
+      <p>Copyright 2015 Eric Mikulin</p>
+    </footer>
+  </body>
+</html>
