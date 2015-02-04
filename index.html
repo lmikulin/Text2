@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <title>Text^2</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="src/jquery.min.js"></script>
     <script src="src/controller.js"></script>
   </head>
 
@@ -16,25 +17,23 @@
       <h1>The Text Adventure</h1>
     </header>
 
-    <div class="screen">
-      <div class="textView">
-        <pre id="textTarget"></pre>
+    <div class="wrapper">
+      <div class="textView panel" id="textTarget">
       </div>
       
-      <div class="textEnter">
+      <div class="textEnter panel">
         <form>
           <input type="text" id="input"/>
-          <input type="submit" style="position: absolute; left: -9999px"/>
         </form>
       </div>
-    </div>
 
-    <div class="quickControl">
-      <p>Quick Controls</p> 
-      <button type="button" id="north">North</button>
-      <button type="button" id="south">South</button>
-      <button type="button" id="west">West</button>
-      <button type="button" id="east">East</button>
+      <div class="quickControl panel">
+        <p>Quick Controls</p> 
+        <button type="button" id="north" onclick="direction(&quot N &quot)">North</button>
+        <button type="button" id="south" onclick="direction(&quot S &quot)">South</button>
+        <button type="button" id="west"  onclick="direction(&quot W &quot)">West</button>
+        <button type="button" id="east"  onclick="direction(&quot E &quot)">East</button>
+      </div>
     </div>
 
     <footer>
